@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OSCActivityApplyViewController">
+            <connections>
+                <outlet property="applyButton" destination="h9c-K8-7b9" id="M6S-SS-y24"/>
+                <outlet property="tableView" destination="cV4-lj-oD8" id="Mho-pE-EiL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uhm-lR-o8J">
+                    <rect key="frame" x="0.0" y="592" width="375" height="75"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9c-K8-7b9">
+                            <rect key="frame" x="12" y="16" width="351" height="45"/>
+                            <color key="backgroundColor" red="0.2627450980392157" green="0.50588235294117645" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="6sj-3h-NZw"/>
+                            </constraints>
+                            <state key="normal" title="确认报名">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="0.2011183647260274" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="applysAction:" destination="-1" eventType="touchUpInside" id="g23-Ex-FdW"/>
+                                <action selector="settingTouchDownColor:" destination="-1" eventType="touchDown" id="77F-gR-gfS"/>
+                                <action selector="settingTouchUp:" destination="-1" eventType="touchUpOutside" id="Pqr-v3-Hjp"/>
+                                <action selector="settingTouchUp:" destination="-1" eventType="touchUpInside" id="hCo-pO-7lr"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="h9c-K8-7b9" secondAttribute="trailing" constant="12" id="KUi-WG-19I"/>
+                        <constraint firstAttribute="height" constant="75" id="b1S-3s-esm"/>
+                        <constraint firstItem="h9c-K8-7b9" firstAttribute="leading" secondItem="Uhm-lR-o8J" secondAttribute="leading" constant="12" id="jyJ-ii-BA7"/>
+                        <constraint firstItem="h9c-K8-7b9" firstAttribute="top" secondItem="Uhm-lR-o8J" secondAttribute="top" constant="16" id="ryo-Qo-1jD"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cV4-lj-oD8">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="592"/>
+                    <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="cV4-lj-oD8" secondAttribute="trailing" id="2PJ-eT-ZRI"/>
+                <constraint firstAttribute="trailing" secondItem="Uhm-lR-o8J" secondAttribute="trailing" id="8fb-mb-6ec"/>
+                <constraint firstItem="cV4-lj-oD8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="G7S-wz-Gay"/>
+                <constraint firstItem="Uhm-lR-o8J" firstAttribute="top" secondItem="cV4-lj-oD8" secondAttribute="bottom" id="JUG-gq-moy"/>
+                <constraint firstItem="Uhm-lR-o8J" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="o5p-cu-rZ7"/>
+                <constraint firstAttribute="bottom" secondItem="Uhm-lR-o8J" secondAttribute="bottom" id="oRs-hx-gZA"/>
+                <constraint firstItem="cV4-lj-oD8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vNj-TW-Hwi"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

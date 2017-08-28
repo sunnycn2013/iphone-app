@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="96" id="KGk-i7-Jjw" customClass="TextareaCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="96"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="95"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="备注 (选填)：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1e-Au-ulX">
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.41568627450000001" green="0.41568627450000001" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oq2-PA-SUO">
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请填写详情描述" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZY-oQ-Jo1">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="0zc-o0-sm1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.81960784310000001" green="0.83529411760000005" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="k1e-Au-ulX" secondAttribute="trailing" constant="12" id="B4o-GY-pOq"/>
+                    <constraint firstItem="oq2-PA-SUO" firstAttribute="leading" secondItem="k1e-Au-ulX" secondAttribute="leading" id="FhT-w9-CgO"/>
+                    <constraint firstItem="kZY-oQ-Jo1" firstAttribute="top" secondItem="k1e-Au-ulX" secondAttribute="bottom" constant="14" id="Gd1-fs-cHJ"/>
+                    <constraint firstItem="oq2-PA-SUO" firstAttribute="trailing" secondItem="k1e-Au-ulX" secondAttribute="trailing" id="HeQ-0l-2Y1"/>
+                    <constraint firstAttribute="bottom" secondItem="oq2-PA-SUO" secondAttribute="bottom" constant="8" id="OlX-5v-M1K"/>
+                    <constraint firstAttribute="trailing" secondItem="kZY-oQ-Jo1" secondAttribute="trailing" constant="8" id="gBm-fW-mId"/>
+                    <constraint firstItem="oq2-PA-SUO" firstAttribute="top" secondItem="k1e-Au-ulX" secondAttribute="bottom" constant="10" id="lW6-am-BrV"/>
+                    <constraint firstItem="k1e-Au-ulX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="m36-v6-cod"/>
+                    <constraint firstItem="kZY-oQ-Jo1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="nSu-eb-dXz"/>
+                    <constraint firstItem="k1e-Au-ulX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="qxH-xM-dzf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLabel" destination="k1e-Au-ulX" id="cko-Tv-grT"/>
+                <outlet property="placeholderLabel" destination="kZY-oQ-Jo1" id="FV4-yr-DRD"/>
+                <outlet property="textView" destination="oq2-PA-SUO" id="Rc0-NB-reN"/>
+            </connections>
+            <point key="canvasLocation" x="-159" y="45"/>
+        </tableViewCell>
+    </objects>
+</document>

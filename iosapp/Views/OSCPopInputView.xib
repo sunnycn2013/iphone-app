@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="OSCPopInputView">
+            <rect key="frame" x="0.0" y="0.0" width="494" height="218"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yJg-m9-cwE" userLabel="BG_View">
+                    <rect key="frame" x="0.0" y="0.0" width="494" height="218"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="axl-sr-me4">
+                            <rect key="frame" x="185" y="174" width="74" height="22"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivj-r7-VnJ">
+                    <rect key="frame" x="19" y="172" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="BwD-Tp-tMc"/>
+                        <constraint firstAttribute="height" constant="32" id="sv6-Fw-BYf"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="btn_at_normal"/>
+                    <state key="highlighted" backgroundImage="btn_at_pressed"/>
+                    <connections>
+                        <action selector="didClickAtButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="lYT-sn-LGA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XGc-31-51V">
+                    <rect key="frame" x="418" y="174" width="64" height="28"/>
+                    <color key="backgroundColor" red="0.14117647059999999" green="0.81176470590000005" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="HTs-4H-VMJ"/>
+                        <constraint firstAttribute="width" constant="64" id="Ldu-OH-TcF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="didClickSendButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="jgI-RR-NJU"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCf-BN-d4Q">
+                    <rect key="frame" x="99" y="172" width="104" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="104" id="OTv-hi-JuF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="tintColor" red="0.41568627450980389" green="0.41568627450980389" blue="0.41568627450980389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="转发到动弹" image="form_checkbox_normal">
+                        <color key="titleColor" red="0.41568627450980389" green="0.41568627450980389" blue="0.41568627450980389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" image="form_checkbox_checked">
+                        <color key="titleColor" red="0.14117647059999999" green="0.81176470590000005" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="didClickForwardingButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="sxZ-nc-qIz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGO-qk-Miz">
+                    <rect key="frame" x="57" y="172" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="3A8-JA-QU7"/>
+                        <constraint firstAttribute="width" constant="32" id="YgU-Vi-Wzs"/>
+                    </constraints>
+                    <state key="normal" image="btn_emoji_normal"/>
+                    <state key="highlighted" image="btn_emoji_pressed"/>
+                    <connections>
+                        <action selector="didClickEmojiButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="Y6D-ON-a0m"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WzB-kM-Eew">
+                    <rect key="frame" x="374" y="179" width="36" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.82352941180000006" green="0.82352941180000006" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BeP-Ck-5yf" customClass="YYTextView">
+                    <rect key="frame" x="12" y="14" width="470" height="148"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderTextColor">
+                            <color key="value" red="0.81960784310000001" green="0.83529411760000005" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontSize_">
+                            <real key="value" value="14"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="fontSize_">
+                            <real key="value" value="14"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="说点什么...."/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="insetTop_">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="insetBottom_">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="insetLeft_">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="insetRight_">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="text" value="Graphic_One"/>
+                    </userDefinedRuntimeAttributes>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ivj-r7-VnJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="19" id="5kr-DO-Lg9"/>
+                <constraint firstItem="yJg-m9-cwE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9Z5-Mz-crP"/>
+                <constraint firstItem="XGc-31-51V" firstAttribute="centerY" secondItem="VGO-qk-Miz" secondAttribute="centerY" id="BDI-q4-oxp"/>
+                <constraint firstItem="ZCf-BN-d4Q" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="99" id="LEI-NN-3go"/>
+                <constraint firstAttribute="bottom" secondItem="yJg-m9-cwE" secondAttribute="bottom" id="MHG-Pd-F3D"/>
+                <constraint firstItem="XGc-31-51V" firstAttribute="leading" secondItem="WzB-kM-Eew" secondAttribute="trailing" constant="8" id="PMD-Pz-fLt"/>
+                <constraint firstItem="VGO-qk-Miz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="57" id="RuT-Nv-mQB"/>
+                <constraint firstItem="BeP-Ck-5yf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="14" id="Sb5-zg-OaS"/>
+                <constraint firstItem="yJg-m9-cwE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="TLh-hq-F2m"/>
+                <constraint firstAttribute="trailing" secondItem="yJg-m9-cwE" secondAttribute="trailing" id="YFN-HP-t8c"/>
+                <constraint firstItem="XGc-31-51V" firstAttribute="centerY" secondItem="WzB-kM-Eew" secondAttribute="centerY" id="gha-uf-sHL"/>
+                <constraint firstItem="XGc-31-51V" firstAttribute="top" secondItem="BeP-Ck-5yf" secondAttribute="bottom" constant="12" id="lPI-di-cXs"/>
+                <constraint firstItem="XGc-31-51V" firstAttribute="trailing" secondItem="BeP-Ck-5yf" secondAttribute="trailing" id="qqu-8Q-7jy"/>
+                <constraint firstItem="XGc-31-51V" firstAttribute="centerY" secondItem="ivj-r7-VnJ" secondAttribute="centerY" id="rad-qf-WDu"/>
+                <constraint firstItem="BeP-Ck-5yf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="s5x-Wy-Cpk"/>
+                <constraint firstAttribute="bottomMargin" secondItem="XGc-31-51V" secondAttribute="bottom" constant="8" id="uJv-Tl-Vyp"/>
+                <constraint firstAttribute="trailing" secondItem="BeP-Ck-5yf" secondAttribute="trailing" constant="12" id="vsb-UJ-mpU"/>
+                <constraint firstItem="XGc-31-51V" firstAttribute="centerY" secondItem="ZCf-BN-d4Q" secondAttribute="centerY" id="yU6-tr-ifY"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="atButton" destination="ivj-r7-VnJ" id="ZMA-UW-EVN"/>
+                <outlet property="atButton_left_padding" destination="5kr-DO-Lg9" id="FPi-aJ-N81"/>
+                <outlet property="bg_View" destination="yJg-m9-cwE" id="GCE-ng-t4q"/>
+                <outlet property="emjioButton_left_padding" destination="RuT-Nv-mQB" id="pMA-Av-v8h"/>
+                <outlet property="emojiButton" destination="VGO-qk-Miz" id="HJU-XI-hGb"/>
+                <outlet property="forwardingButton" destination="ZCf-BN-d4Q" id="8Df-kx-eVV"/>
+                <outlet property="forwardingButton_left_padding" destination="LEI-NN-3go" id="spj-RO-o4y"/>
+                <outlet property="inputTextView" destination="BeP-Ck-5yf" id="CwQ-Kq-P3P"/>
+                <outlet property="sendButton" destination="XGc-31-51V" id="bS1-Og-c29"/>
+                <outlet property="tipTextLabel" destination="WzB-kM-Eew" id="JnQ-Gt-zWW"/>
+            </connections>
+            <point key="canvasLocation" x="-300" y="-91"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_at_normal" width="32" height="32"/>
+        <image name="btn_at_pressed" width="32" height="32"/>
+        <image name="btn_emoji_normal" width="20" height="20"/>
+        <image name="btn_emoji_pressed" width="20" height="20"/>
+        <image name="form_checkbox_checked" width="32" height="32"/>
+        <image name="form_checkbox_normal" width="32" height="32"/>
+    </resources>
+</document>

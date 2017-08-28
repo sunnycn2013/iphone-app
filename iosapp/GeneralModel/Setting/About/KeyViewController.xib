@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyViewController">
+            <connections>
+                <outlet property="lblMessage" destination="s3T-ry-TGV" id="483-qw-ixo"/>
+                <outlet property="txtInput" destination="bKA-3W-o7n" id="Det-nG-9K3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RgD-n5-8hx">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="KRR-Sf-BMf"/>
+                        <constraint firstAttribute="width" constant="62" id="cCB-6n-TNF"/>
+                    </constraints>
+                    <state key="normal" title="查看一下"/>
+                    <connections>
+                        <action selector="btnClicked:" destination="-1" eventType="touchUpInside" id="z2p-Ry-OJ2"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s3T-ry-TGV">
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bKA-3W-o7n">
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="bKA-3W-o7n" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="4uu-mQ-eN7" userLabel="请输入.leading = leading + 30"/>
+                <constraint firstItem="s3T-ry-TGV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="AJI-RA-DSP"/>
+                <constraint firstItem="RgD-n5-8hx" firstAttribute="top" secondItem="bKA-3W-o7n" secondAttribute="bottom" constant="30" id="FC2-Jl-dMa"/>
+                <constraint firstItem="s3T-ry-TGV" firstAttribute="top" secondItem="RgD-n5-8hx" secondAttribute="bottom" constant="50" id="JLq-aY-spO"/>
+                <constraint firstItem="RgD-n5-8hx" firstAttribute="top" secondItem="bKA-3W-o7n" secondAttribute="bottom" constant="30" id="Tm8-m0-d3z"/>
+                <constraint firstItem="bKA-3W-o7n" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="tlI-VV-hho"/>
+                <constraint firstItem="RgD-n5-8hx" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xKf-5a-s1M"/>
+                <constraint firstAttribute="trailing" secondItem="bKA-3W-o7n" secondAttribute="trailing" constant="30" id="xdf-hY-I51"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <point key="canvasLocation" x="26" y="30"/>
+        </view>
+    </objects>
+</document>

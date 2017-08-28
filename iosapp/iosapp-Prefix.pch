@@ -1,0 +1,28 @@
+//
+//  iosapp-Prefix.pch
+//  iosapp
+//
+//  Created by 巴拉迪维 on 17/6/01.
+//  Copyright (c) 2017年 oschina. All rights reserved.
+//
+
+
+#include "osc-token-config.pch"
+
+/** 根据此Key取得的是已选的menuItem的Token数组 */
+#define kUserDefaults_ChooseMenus   @"UserDefaultsChooseMenus"
+#define kUserDefaults_AppVersion    @"UserDefaultsAppVersion"
+
+/** AppToken 通过请求头传递 */
+#define Application_BundleID [[NSBundle mainBundle].infoDictionary valueForKey:@"CFBundleIdentifier"]
+#define Application_BuildNumber [[NSBundle mainBundle].infoDictionary valueForKey:@"CFBundleVersion"]
+#define Application_Version [[NSBundle mainBundle].infoDictionary valueForKey:@"CFBundleShortVersionString"]
+
+/* debug和release设置 */
+#ifdef DEBUG
+	#define NSLog(...) NSLog(__VA_ARGS__)
+	#define debugMethod() NSLog(@"%s", __func__)
+#else
+	#define NSLog(...)
+	#define debugMethod()
+#endif
