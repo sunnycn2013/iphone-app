@@ -59,7 +59,7 @@
 
 #define SHARE_EXTENSION_GROUP_ID @"group.net.oschina.share.tweet.app"
 
-@interface AppDelegate () <UIApplicationDelegate,BMKLocationServiceDelegate,BMKRadarManagerDelegate>
+@interface AppDelegate () <UIApplicationDelegate>
 
 @end
 
@@ -157,79 +157,7 @@ NSLock *lock;
 	NSInteger ownId = [Config getOwnID];
 	if ( ownId >0 ) {
 		NSLog(@"登录用户");
-		
-		_mapManager = [[BMKMapManager alloc] init];
-		BOOL ret = [_mapManager start:@"1DLpzqDN1c1KvCnvAHGUBVgvUB51lWtM" generalDelegate:nil];
-		if (ret) {
-			NSLog(@"百度地图引擎启动成功");
-			
-			NSString *yesOrNo = [Utils shouldUploadLocation];
-			if (yesOrNo == nil || [yesOrNo isEqualToString:@"yes"]) {
-				_locationService = [[BMKLocationService alloc] init];
-				_locationService.delegate = self;
-				[_locationService startUserLocationService];
-			} else {
-				//不上传位置信息
-				NSLog(@"用户不允许上传位置信息");
-			}
-		} else {
-			NSLog(@"百度地图引擎启动失败");
-		}//end of ret
 	}
-}
-
-#pragma mark - 百度定位回调
--(void) didUpdateBMKUserLocation:(BMKUserLocation *)userLocation {
-	
-	[Utils setShouldUploadLocation:@"yes"]; //设置flag
-	BMKRadarUploadInfo *userInfo = [[BMKRadarUploadInfo alloc] init];
-	[lock lock];	
-	_curLocation.latitude = userLocation.location.coordinate.latitude;
-	_curLocation.longitude = userLocation.location.coordinate.longitude;
-	[lock unlock];
-	userInfo.pt = _curLocation;
-	userInfo.extInfo = [Utils getUpLoadExtInfo];
-	
-	_radarManager = [BMKRadarManager getRadarManagerInstance];
-	[_radarManager stopAutoUpload];
-	[_radarManager addRadarManagerDelegate:self];
-	_radarManager.userId = [NSString stringWithFormat:@"%ld",(long)[Config getOwnID]];
-	
-	[_radarManager uploadInfoRequest:userInfo];
-}
-
--(void) didFailToLocateUserWithError:(NSError *)error {
-	NSLog(@"获取用户位置失败");
-	UIAlertController *ac = [UIAlertController alertControllerWithTitle:@"提示" message:@"开源中国无法获取您的位置信息\n现在去「设置」打开定位服务并允许开源中国获取位置信息吗？" preferredStyle:UIAlertControllerStyleAlert];
-	UIAlertAction *rejectAction = [UIAlertAction actionWithTitle:@"拒绝" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-		//handler
-		NSLog(@"Reject action");
-		[Utils setShouldUploadLocation:@"no"];
-	}];
-	
-	UIAlertAction *approveAction = [UIAlertAction actionWithTitle:@"设置" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-		//handler
-		NSLog(@"Approve action");
-		[[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
-		
-	}];
-	
-	[ac addAction:rejectAction];
-	[ac addAction:approveAction];
-	dispatch_async(dispatch_get_main_queue(), ^{
-		[self.window.rootViewController presentViewController:ac animated:YES completion:nil];
-	});
-}
-
--(void) onGetRadarUploadResult:(BMKRadarErrorCode)error {
-	
-	if (error) {
-		NSLog(@"上传用户信息失败");
-	}
-	
-	[_locationService stopUserLocationService];
-	[_radarManager removeRadarManagerDelegate:self];
-	[BMKRadarManager releaseRadarManagerInstance];
 }
 
 #pragma mark - 外部链接点击处理

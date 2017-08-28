@@ -26,4 +26,8 @@ pod 'TZImagePickerController'
 pod 'MLeaksFinder'
 pod 'FMDB'
 
+
+pod 'Bugly', '~> 2.4.8'   #腾讯bugly
+pod 'QQ_XGPush', '~> 2.5.0' #  腾讯信鸽（XG Push)
+
 end

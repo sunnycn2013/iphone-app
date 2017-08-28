@@ -10,8 +10,7 @@
 #import "OSCAPI.h"
 #import "Utils.h"
 #import "UIDevice+SystemInfo.h"
-#import <BaiduMapAPI_Location/BMKLocationComponent.h>
-#import <BaiduMapAPI_Radar/BMKRadarComponent.h>
+
 #import "OSCUserItem.h"
 #import "Config.h"
 #import "AFHTTPRequestOperationManager+Util.h"
@@ -21,7 +20,7 @@
 #define kUploadTime @"uplaodTime"
 
 
-@interface OSCReadingInfoManager ()<BMKLocationServiceDelegate>
+@interface OSCReadingInfoManager ()
 
 @property (nonatomic, assign) NSUInteger lastIdInt;//当次上传的记录ID
 

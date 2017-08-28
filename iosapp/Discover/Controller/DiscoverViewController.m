@@ -20,12 +20,11 @@
 #import "SoftwareListVC.h"
 #import "OSCCodeSnippetViewController.h"
 
-#import "OSCNearbyPeopleViewController.h"
 #import "OSCGitRecommendController.h"
 
 #define kUsingLocation(id) [NSString stringWithFormat:@"OSCUsingLocationKey_%ld_BOOL",id]
 
-@interface DiscoverViewController ()<OSCNearbyPeopleViewCDelegate>
+@interface DiscoverViewController ()
 
 @property (nonatomic, strong) UIImageView * imageView;
 @property (nonatomic, assign) BOOL isCompleteLoc;//临时存放信息
@@ -201,10 +200,7 @@
 		{
 			if (indexPath.row == 0) {
 				if ([Config getOwnID] != 0) {
-					OSCNearbyPeopleViewController *nearbyPeopleViewController = [[OSCNearbyPeopleViewController alloc] init];
-					nearbyPeopleViewController.delegate = self;
-					nearbyPeopleViewController.hidesBottomBarWhenPushed = YES;
-					[self.navigationController pushViewController:nearbyPeopleViewController animated:YES];
+					
 				}else{
 					UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"NewLogin" bundle:nil];
 					NewLoginViewController *loginVC = [storyboard instantiateViewControllerWithIdentifier:@"NewLoginViewController"];

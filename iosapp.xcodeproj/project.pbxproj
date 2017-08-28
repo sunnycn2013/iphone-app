@@ -447,13 +447,9 @@
 		2ADE2FD51E2374B700F77B54 /* ActivityBasicInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADE2FD21E2374B700F77B54 /* ActivityBasicInfoCell.m */; };
 		2ADE2FD61E2374B700F77B54 /* ActivityDetailsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADE2FD41E2374B700F77B54 /* ActivityDetailsCell.m */; };
 		2AEF05421DF583FA0022FCA1 /* OSCTweetDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AEF05411DF583FA0022FCA1 /* OSCTweetDetailTableViewCell.m */; };
-		2AF108AA1E25D99C0026C99B /* OSCNearbyPeopleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF108A61E25D99C0026C99B /* OSCNearbyPeopleViewController.m */; };
 		2AF108AF1E25DB280026C99B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF108AE1E25DB280026C99B /* OpenGLES.framework */; };
 		2AF108B11E25DB7C0026C99B /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF108B01E25DB7C0026C99B /* libstdc++.6.0.9.tbd */; };
 		2AF108BE1E25DC030026C99B /* OSCTopicChoseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF108BD1E25DC030026C99B /* OSCTopicChoseViewController.m */; };
-		2AF108C21E25DEED0026C99B /* NearbyPersonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF108C01E25DEED0026C99B /* NearbyPersonCell.m */; };
-		2AF108C31E25DEED0026C99B /* NearbyPersonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AF108C11E25DEED0026C99B /* NearbyPersonCell.xib */; };
-		2AF108C71E25E0C70026C99B /* OSCNearByPeopleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF108C61E25E0C70026C99B /* OSCNearByPeopleModel.m */; };
 		2AF58CBB1DF7E0EC00297FF2 /* OSCTweetAtMeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF58CBA1DF7E0EC00297FF2 /* OSCTweetAtMeCell.m */; };
 		31697BCA1B16FB0E001FE346 /* MZDay.m in Sources */ = {isa = PBXBuildFile; fileRef = 31697BC51B16FB0E001FE346 /* MZDay.m */; };
 		31697BCB1B16FB0E001FE346 /* MZDayPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 31697BC71B16FB0E001FE346 /* MZDayPicker.m */; };
@@ -473,12 +469,6 @@
 		38DB5E8F1A496FFD0092C966 /* emoji.plist in Resources */ = {isa = PBXBuildFile; fileRef = 38DB5E8E1A496FFD0092C966 /* emoji.plist */; };
 		38E067441A19AC4900D41976 /* GrowingTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E067431A19AC4900D41976 /* GrowingTextView.m */; };
 		7404BDC71EC16667007E16DB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7404BDC61EC16667007E16DB /* MobileCoreServices.framework */; };
-		7418D7E01ECAEBC80079A8E1 /* BaiduMapAPI_Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7418D7DC1ECAEBC80079A8E1 /* BaiduMapAPI_Base.framework */; };
-		7418D7E11ECAEBC80079A8E1 /* BaiduMapAPI_Location.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7418D7DD1ECAEBC80079A8E1 /* BaiduMapAPI_Location.framework */; };
-		7418D7E21ECAEBC80079A8E1 /* BaiduMapAPI_Radar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7418D7DE1ECAEBC80079A8E1 /* BaiduMapAPI_Radar.framework */; };
-		7418D7E41ECAEC180079A8E1 /* mapapi.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = 7418D7DF1ECAEBC80079A8E1 /* mapapi.bundle */; };
-		7418D7E71ECAEC840079A8E1 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7418D7E51ECAEC840079A8E1 /* libcrypto.a */; };
-		7418D7E81ECAEC840079A8E1 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7418D7E61ECAEC840079A8E1 /* libssl.a */; };
 		7418D7F21ECAECE90079A8E1 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7418D7EA1ECAECE90079A8E1 /* MainInterface.storyboard */; };
 		7418D7F31ECAECE90079A8E1 /* GACompressionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7418D7ED1ECAECE90079A8E1 /* GACompressionHelper.m */; };
 		7418D7F41ECAECE90079A8E1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7418D7EE1ECAECE90079A8E1 /* Info.plist */; };
@@ -1357,22 +1347,10 @@
 		2ADE2FD41E2374B700F77B54 /* ActivityDetailsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityDetailsCell.m; sourceTree = "<group>"; };
 		2AEF05401DF583FA0022FCA1 /* OSCTweetDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCTweetDetailTableViewCell.h; sourceTree = "<group>"; };
 		2AEF05411DF583FA0022FCA1 /* OSCTweetDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCTweetDetailTableViewCell.m; sourceTree = "<group>"; };
-		2AF108A51E25D99C0026C99B /* OSCNearbyPeopleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCNearbyPeopleViewController.h; sourceTree = "<group>"; };
-		2AF108A61E25D99C0026C99B /* OSCNearbyPeopleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCNearbyPeopleViewController.m; sourceTree = "<group>"; };
 		2AF108AE1E25DB280026C99B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		2AF108B01E25DB7C0026C99B /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
-		2AF108B21E25DBA50026C99B /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
-		2AF108B31E25DBA50026C99B /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
-		2AF108B61E25DBD10026C99B /* BaiduMapAPI_Base.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Base.framework; sourceTree = "<group>"; };
-		2AF108B71E25DBD10026C99B /* BaiduMapAPI_Location.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Location.framework; sourceTree = "<group>"; };
-		2AF108B81E25DBD10026C99B /* BaiduMapAPI_Radar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Radar.framework; sourceTree = "<group>"; };
 		2AF108BC1E25DC030026C99B /* OSCTopicChoseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCTopicChoseViewController.h; sourceTree = "<group>"; };
 		2AF108BD1E25DC030026C99B /* OSCTopicChoseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCTopicChoseViewController.m; sourceTree = "<group>"; };
-		2AF108BF1E25DEED0026C99B /* NearbyPersonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NearbyPersonCell.h; sourceTree = "<group>"; };
-		2AF108C01E25DEED0026C99B /* NearbyPersonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearbyPersonCell.m; sourceTree = "<group>"; };
-		2AF108C11E25DEED0026C99B /* NearbyPersonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NearbyPersonCell.xib; sourceTree = "<group>"; };
-		2AF108C51E25E0C70026C99B /* OSCNearByPeopleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCNearByPeopleModel.h; sourceTree = "<group>"; };
-		2AF108C61E25E0C70026C99B /* OSCNearByPeopleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCNearByPeopleModel.m; sourceTree = "<group>"; };
 		2AF58CB91DF7E0EC00297FF2 /* OSCTweetAtMeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCTweetAtMeCell.h; sourceTree = "<group>"; };
 		2AF58CBA1DF7E0EC00297FF2 /* OSCTweetAtMeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCTweetAtMeCell.m; sourceTree = "<group>"; };
 		31697BC41B16FB0E001FE346 /* MZDay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZDay.h; sourceTree = "<group>"; };
@@ -1411,12 +1389,6 @@
 		38E067421A19AC4900D41976 /* GrowingTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingTextView.h; sourceTree = "<group>"; };
 		38E067431A19AC4900D41976 /* GrowingTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingTextView.m; sourceTree = "<group>"; };
 		7404BDC61EC16667007E16DB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		7418D7DC1ECAEBC80079A8E1 /* BaiduMapAPI_Base.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI_Base.framework; path = frameworks/BaiduMapAPI_Base.framework; sourceTree = "<group>"; };
-		7418D7DD1ECAEBC80079A8E1 /* BaiduMapAPI_Location.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI_Location.framework; path = frameworks/BaiduMapAPI_Location.framework; sourceTree = "<group>"; };
-		7418D7DE1ECAEBC80079A8E1 /* BaiduMapAPI_Radar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI_Radar.framework; path = frameworks/BaiduMapAPI_Radar.framework; sourceTree = "<group>"; };
-		7418D7DF1ECAEBC80079A8E1 /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = mapapi.bundle; path = frameworks/mapapi.bundle; sourceTree = "<group>"; };
-		7418D7E51ECAEC840079A8E1 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = frameworks/libcrypto.a; sourceTree = "<group>"; };
-		7418D7E61ECAEC840079A8E1 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = frameworks/libssl.a; sourceTree = "<group>"; };
 		7418D7EB1ECAECE90079A8E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		7418D7EC1ECAECE90079A8E1 /* GACompressionHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GACompressionHelper.h; path = "osc-share-extension/GACompressionHelper.h"; sourceTree = SOURCE_ROOT; };
 		7418D7ED1ECAECE90079A8E1 /* GACompressionHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GACompressionHelper.m; path = "osc-share-extension/GACompressionHelper.m"; sourceTree = SOURCE_ROOT; };
@@ -1515,12 +1487,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7418D7E71ECAEC840079A8E1 /* libcrypto.a in Frameworks */,
-				7418D7E81ECAEC840079A8E1 /* libssl.a in Frameworks */,
-				7418D7E41ECAEC180079A8E1 /* mapapi.bundle in Frameworks */,
-				7418D7E01ECAEBC80079A8E1 /* BaiduMapAPI_Base.framework in Frameworks */,
-				7418D7E11ECAEBC80079A8E1 /* BaiduMapAPI_Location.framework in Frameworks */,
-				7418D7E21ECAEBC80079A8E1 /* BaiduMapAPI_Radar.framework in Frameworks */,
 				2AF108B11E25DB7C0026C99B /* libstdc++.6.0.9.tbd in Frameworks */,
 				2AF108AF1E25DB280026C99B /* OpenGLES.framework in Frameworks */,
 				04947CAE1E1E31640013B442 /* WebKit.framework in Frameworks */,
@@ -2630,7 +2596,6 @@
 				04951C061E09251A0072AAEE /* Circles */,
 				2A9F04181E67FC9D0012AA59 /* OSCGit */,
 				2AD921C01EC2F6330043E746 /* CodeSnippet */,
-				2AF108A31E25D99C0026C99B /* NearbyPeople */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -3011,19 +2976,8 @@
 		1BB5019F31BE469F592E0B67 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7418D7E51ECAEC840079A8E1 /* libcrypto.a */,
-				7418D7E61ECAEC840079A8E1 /* libssl.a */,
-				7418D7DC1ECAEBC80079A8E1 /* BaiduMapAPI_Base.framework */,
-				7418D7DD1ECAEBC80079A8E1 /* BaiduMapAPI_Location.framework */,
-				7418D7DE1ECAEBC80079A8E1 /* BaiduMapAPI_Radar.framework */,
-				7418D7DF1ECAEBC80079A8E1 /* mapapi.bundle */,
 				7404BDC61EC16667007E16DB /* MobileCoreServices.framework */,
 				74664FFE1E8DFEF700D238EB /* AVFoundation.framework */,
-				2AF108B61E25DBD10026C99B /* BaiduMapAPI_Base.framework */,
-				2AF108B71E25DBD10026C99B /* BaiduMapAPI_Location.framework */,
-				2AF108B81E25DBD10026C99B /* BaiduMapAPI_Radar.framework */,
-				2AF108B21E25DBA50026C99B /* libcrypto.a */,
-				2AF108B31E25DBA50026C99B /* libssl.a */,
 				2AF108B01E25DB7C0026C99B /* libstdc++.6.0.9.tbd */,
 				2AF108AE1E25DB280026C99B /* OpenGLES.framework */,
 				04E0409D1E0A6A21008F1A9A /* CoreLocation.framework */,
@@ -3344,44 +3298,6 @@
 				2ADE2FD41E2374B700F77B54 /* ActivityDetailsCell.m */,
 			);
 			path = Activity;
-			sourceTree = "<group>";
-		};
-		2AF108A31E25D99C0026C99B /* NearbyPeople */ = {
-			isa = PBXGroup;
-			children = (
-				2AF108C41E25E08B0026C99B /* Model */,
-				2AF108A41E25D99C0026C99B /* controllers */,
-				2AF108A71E25D99C0026C99B /* views */,
-			);
-			path = NearbyPeople;
-			sourceTree = "<group>";
-		};
-		2AF108A41E25D99C0026C99B /* controllers */ = {
-			isa = PBXGroup;
-			children = (
-				2AF108A51E25D99C0026C99B /* OSCNearbyPeopleViewController.h */,
-				2AF108A61E25D99C0026C99B /* OSCNearbyPeopleViewController.m */,
-			);
-			path = controllers;
-			sourceTree = "<group>";
-		};
-		2AF108A71E25D99C0026C99B /* views */ = {
-			isa = PBXGroup;
-			children = (
-				2AF108BF1E25DEED0026C99B /* NearbyPersonCell.h */,
-				2AF108C01E25DEED0026C99B /* NearbyPersonCell.m */,
-				2AF108C11E25DEED0026C99B /* NearbyPersonCell.xib */,
-			);
-			path = views;
-			sourceTree = "<group>";
-		};
-		2AF108C41E25E08B0026C99B /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				2AF108C51E25E0C70026C99B /* OSCNearByPeopleModel.h */,
-				2AF108C61E25E0C70026C99B /* OSCNearByPeopleModel.m */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		31697BC31B16FB0E001FE346 /* MZDayPicker */ = {
@@ -3935,7 +3851,6 @@
 				317AD9C91C96AD68008356DE /* recommend_tag.png in Resources */,
 				049A8F201E7FBF0A000B009F /* jquery.js in Resources */,
 				04F19C351DCB1D710035BCAF /* sub_tab_original.json in Resources */,
-				2AF108C31E25DEED0026C99B /* NearbyPersonCell.xib in Resources */,
 				0404C5451D98C7330043E44A /* ContentWebViewCell.xib in Resources */,
 				04270A1E1D77CD5200E21ECC /* InputToolbarContentView.xib in Resources */,
 				0404C5531D98C7330043E44A /* webAndAbsTableViewCell.xib in Resources */,
@@ -4251,7 +4166,6 @@
 				04A233401DED20C7006B3550 /* OSCListItem.m in Sources */,
 				2AD921D21EC327F00043E746 /* OSCCodeDetailHeadView.m in Sources */,
 				2ABEF3611DCAE79900B6B9C1 /* OSCMenuItem.m in Sources */,
-				2AF108C21E25DEED0026C99B /* NearbyPersonCell.m in Sources */,
 				0404C4F71D98C7330043E44A /* TeamDiscussionViewController.m in Sources */,
 				0404C5A81D98C77D0043E44A /* OSCTweetMultipleDetailTableViewCell.m in Sources */,
 				EE6FBB941DE4470800985B4E /* OSCSwipabelCollectionController.m in Sources */,
@@ -4271,7 +4185,6 @@
 				0404C4D81D98C7330043E44A /* OSCPostDetails.m in Sources */,
 				0422BC5A1CEDA390007DB140 /* SDCollectionViewCell.m in Sources */,
 				04B05DAB1D892E0F00D525F2 /* TitleBarView.m in Sources */,
-				2AF108C71E25E0C70026C99B /* OSCNearByPeopleModel.m in Sources */,
 				0404C4D11D98C7330043E44A /* OSCCommentsController.m in Sources */,
 				0404C5121D98C7330043E44A /* TableViewCell.m in Sources */,
 				0404C4E31D98C7330043E44A /* OSLicensePage.m in Sources */,
@@ -4414,7 +4327,6 @@
 				04F19C241DCA38360035BCAF /* RegisterViewController.m in Sources */,
 				045249231E13686900139B93 /* Model.m in Sources */,
 				042F0AA11D52DDB900D3DC76 /* QuartzCanvasView.m in Sources */,
-				2AF108AA1E25D99C0026C99B /* OSCNearbyPeopleViewController.m in Sources */,
 				2AC1D5AB1DED78A300525258 /* UINavigationController+PushWithAnimation.m in Sources */,
 				04951C6F1E09251A0072AAEE /* OSCRandomGiftLargerImageView.m in Sources */,
 				0436BDD01DB8ABA500A43564 /* WKDelegateController.m in Sources */,
