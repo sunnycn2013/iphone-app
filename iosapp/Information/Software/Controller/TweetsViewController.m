@@ -17,7 +17,6 @@
 #import "OSCUser.h"
 #import "TweetEditingVC.h"
 #import "TweetsLikeListViewController.h"
-#import "TweetDetailNewTableViewController.h"
 
 #import <SDWebImage/UIImageView+WebCache.h>
 #import <MBProgressHUD.h>

@@ -45,6 +45,9 @@
 #import <UMengSocial/UMSocialWechatHandler.h>
 #import <UMengSocial/UMSocialSinaSSOHandler.h>
 
+#import "MTAManager.h"
+#import "BuglyManager.h"
+
 #define UM_APP_KEY @"54c9a412fd98c5779c000752"
 
 #define WX_PAY_ID @"wxa8213dc827399101"
@@ -76,7 +79,8 @@ NSLock *lock;
 	
 	//缓存设置
 	[self setupCache];
-	
+    [MTAManager initMTA];
+    [BuglyManager initBugly];
 	//加载Cookie
     [self loadCookies];
 	
@@ -85,9 +89,6 @@ NSLock *lock;
 	
 	//控件外观设置
 	[self setupLookAndFeel];
-	
-	//百度地图设置
-	[self setupLocationUpload];
     
     //检测通知
 	UIUserNotificationType types = UIUserNotificationTypeSound | UIUserNotificationTypeBadge | UIUserNotificationTypeAlert;
@@ -149,15 +150,6 @@ NSLock *lock;
 	[WeiboSDK enableDebugMode:YES];
 	[WeiboSDK registerApp:SINA_APP_KEY];
 	
-}
-
-#pragma mark - 百度地图相关配置
--(void) setupLocationUpload {
-	
-	NSInteger ownId = [Config getOwnID];
-	if ( ownId >0 ) {
-		NSLog(@"登录用户");
-	}
 }
 
 #pragma mark - 外部链接点击处理

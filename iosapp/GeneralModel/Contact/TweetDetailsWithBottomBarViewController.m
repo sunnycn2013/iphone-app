@@ -25,11 +25,11 @@
 #import "NewLoginViewController.h"
 #import "OSCTweetItem.h"
 #import "TweetEditingVC.h"
-#import "TweetDetailNewTableViewController.h"
 #import "AsyncDisplayTableViewCell.h"
 
 #import "NSObject+Comment.h"
 
+#import "TweetDetailNewTableViewController.h"
 #import <objc/runtime.h>
 #import <MBProgressHUD.h>
 #import <YYKit.h>
